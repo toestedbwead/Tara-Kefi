@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efe9e3">
+
+    <LinearLayout
+        android:id="@+id/productList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:src="@drawable/fulllogo"
+                android:layout_gravity="start"
+                android:contentDescription="Tara, Kefi Logo"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/cartButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:text="Cart"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:backgroundTint="#cca449"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:contentDescription="Cart" />
+        </LinearLayout>
+
+        <!-- Product: Espresso -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/espresso"
+                android:contentDescription="Espresso"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Espresso"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strong and bold espresso shot."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱80"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addEspressoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Americano -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/americano"
+                android:contentDescription="Americano"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Americano"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Made from-- i mean by! an american cat."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱80"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addAmericanoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Mocha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mocha"
+                android:contentDescription="Mocha"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mocha"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rich and creamy – a real treat for your inner catnip lover."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱100"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addMochaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Macchiato -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/macchiato"
+                android:contentDescription="Macchiato"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Macchiato"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A smooth and foamy drink to make you feel pawsitively happy!"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱90"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addMacchiatoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Latte -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/latte"
+                android:contentDescription="Latte"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latte"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Warm, smooth, and the purrfect companion for a cozy day."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱90"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addLatteButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Cappuccino -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cappuccino"
+                android:contentDescription="Cappuccino"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cappuccino"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A fluffy, frothy drink that will make you feel pawsitively joyful."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱95"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addCappuccinoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Tea -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/tea"
+                android:contentDescription="Tea"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tea"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A calming brew for your inner kitten."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱75"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addTeaButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Hot Chocolate -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/hot_chocolate"
+                android:contentDescription="Hot Chocolate"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot Chocolate"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rich and comforting, just like a cat curled up in a blanket."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱85"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addHotChocolateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Sandwich -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/sandwich"
+                android:contentDescription="Sandwich"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sandwich"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A tasty snack to satisfy your cat-like hunger!"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱120"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addSandwichButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Muffins -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/muffins"
+                android:contentDescription="Muffins"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Muffins"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Soft, fluffy, and just the right treat for your cat nap break."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱50"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addMuffinsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Croissant -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/croissant"
+                android:contentDescription="Croissant"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Croissant"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buttery and flaky, a purrrfect pastry to pair with your coffee."
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱65"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addCroissantButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Cookies -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/cookies"
+                android:contentDescription="Cookies"
+                android:scaleType="centerCrop"
+                android:background="@drawable/image_rounded_bg"
+                android:clipToOutline="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="12dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cookies"
+                    android:textColor="#602b00"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crispy and crunchy with just the right amount of sweetness!"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱45"
+                    android:textSize="16sp"
+                    android:textColor="#cca449"
+                    android:layout_marginTop="6dp" />
+
+                <Button
+                    android:id="@+id/addCookiesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to Cart"
+                    android:layout_marginTop="6dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#602b00"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Product: Cake -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:layout_marginHorizontal="4dp"
+            android:clipToPadding="false"
+            android:backgroundTint="#efe9e3"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/cake"
+            android:contentDescription="Cake"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_rounded_bg"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cake"
+                android:textColor="#602b00"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sweet, fluffy, and decadent—a treat as sweet as your kitty’s purr."
+                android:textSize="14sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₱150"
+                android:textSize="16sp"
+                android:textColor="#cca449"
+                android:layout_marginTop="6dp" />
+
+            <Button
+                android:id="@+id/addCakeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add to Cart"
+                android:layout_marginTop="6dp"
+                android:textAllCaps="false"
+                android:backgroundTint="#602b00"
+                android:textColor="#ffffff"
+                android:background="@drawable/rounded_button_bg" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
