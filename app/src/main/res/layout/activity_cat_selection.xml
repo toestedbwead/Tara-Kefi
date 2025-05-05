@@ -12,6 +12,15 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/fulllogo"
+            android:contentDescription="Tara, Kefi Logo"
+            android:layout_marginBottom="16dp" />
+
         <!-- Kefi Cat -->
         <LinearLayout
             android:id="@+id/cat1Layout"
@@ -43,7 +52,7 @@
                 android:id="@+id/cat1Job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Position: Shop Owner"
+                android:text="Position: CEO (Cat Executive Officer)"
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -52,7 +61,7 @@
                 android:id="@+id/cat1Shift"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shift: 6am - 2pm"
+                android:text="Shift: On-call. Lagi."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -61,7 +70,7 @@
                 android:id="@+id/cat1Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bio: Loves latte art and naps in the sun."
+                android:text="Bio: Hindi siya nagtatrabaho, pero lahat sumusunod. Mahilig tumambay sa ibabaw ng resibo printer. Paborito niyang gawin: mag-stare ng matagal, parang may alam siyang hindi mo alam."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -70,10 +79,10 @@
                 android:id="@+id/cat1Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Cat" />
+                android:text="Choose Cat as Server" />
         </LinearLayout>
 
-        <!-- Cat 2 -->
+        <!-- Loki ni Alaiza -->
         <LinearLayout
             android:id="@+id/cat2Layout"
             android:layout_width="match_parent"
@@ -95,7 +104,7 @@
                 android:id="@+id/cat2Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name: Loki"
+                android:text="Name: Loki ni Alaiza"
                 android:textSize="18sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -104,7 +113,7 @@
                 android:id="@+id/cat2Job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Position: Senior Barista"
+                android:text="Position: Paw-rista"
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -113,7 +122,7 @@
                 android:id="@+id/cat2Shift"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shift: 2pm - 10pm"
+                android:text="Shift: 10am - 6pm"
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -122,7 +131,7 @@
                 android:id="@+id/cat2Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bio: Can balance a cup on his tail."
+                android:text="Bio: Kape't tulog ang routine. Madalas mahanap sa counter, naka-tulala o nakatingin sa customers like may deep thoughts. Certified whipped cream enjoyer."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -131,10 +140,10 @@
                 android:id="@+id/cat2Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Cat" />
+                android:text="Choose Cat as Server" />
         </LinearLayout>
 
-        <!-- Cat 3 -->
+        <!-- Loki ni Yasmien -->
         <LinearLayout
             android:id="@+id/cat3Layout"
             android:layout_width="match_parent"
@@ -156,7 +165,7 @@
                 android:id="@+id/cat3Name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name: Loki"
+                android:text="Name: Loki ni Yasmien"
                 android:textSize="18sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -165,7 +174,7 @@
                 android:id="@+id/cat3Job"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Position: Trainee"
+                android:text="Position: Cashpurr"
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -174,7 +183,7 @@
                 android:id="@+id/cat3Shift"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shift: 10am - 6pm"
+                android:text="Shift: 8am - 4pm"
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -183,7 +192,7 @@
                 android:id="@+id/cat3Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bio: New and eager to impress customers."
+                android:text="Bio: Mabilis magbilang ng barya, pero mabagal gumalaw. Laging may suot na bell, pero never maririnig kasi tulog siya half the time."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -192,7 +201,190 @@
                 android:id="@+id/cat3Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Choose Cat" />
+                android:text="Choose Cat as Server" />
+        </LinearLayout>
+
+        <!-- Lobi -->
+        <LinearLayout
+            android:id="@+id/cat4Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat4Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lobi_pic" />
+
+            <TextView
+                android:id="@+id/cat4Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Lobi"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat4Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Espawso Specialist"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat4Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: 12nn - 8pm"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat4Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Mahilig sa dark roast at dark corners. Madalas mong maririnig na nagreklamo pero lalapit din ‘pag may treats."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat4Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat as Server" />
+        </LinearLayout>
+
+        <!-- Nabi -->
+        <LinearLayout
+            android:id="@+id/cat5Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat5Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nabi_pic" />
+
+            <TextView
+                android:id="@+id/cat5Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Nabi"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat5Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Head of Cuddles"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat5Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: Flexible hours (depende sa mood)"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat5Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Pwedeng lap cat, pwedeng diva. Magpapahimas siya—pero dapat siya ang lalapit, hindi ikaw."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat5Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat as Server" />
+        </LinearLayout>
+
+        <!-- Snow -->
+        <LinearLayout
+            android:id="@+id/cat6Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat6Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/snow_pic" />
+
+            <TextView
+                android:id="@+id/cat6Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Snow"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat6Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Security Guard (Honorary)"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat6Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: 6pm - 2am"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat6Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Tahimik pero may presence. Nagbabantay sa may pinto, pero ‘pag may pumasok na dog... wala na, tago agad."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat6Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat as Server" />
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
