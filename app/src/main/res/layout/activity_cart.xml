@@ -8,42 +8,80 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
 
-        <!-- Cart Items (dynamic) -->
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/fulllogo"
+            android:contentDescription="Tara, Kefi Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Cart"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+            android:textColor="#602b00" />
+
+        <!-- Cart Items -->
         <LinearLayout
             android:id="@+id/cartContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#fff8f0"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Total + VAT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total: ₱0.00"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#602b00" />
         </LinearLayout>
 
-        <!-- Total Price -->
-        <TextView
-            android:id="@+id/totalPrice"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Total: ₱0.00"
-            android:textSize="18sp"
-            android:padding="12dp" />
-
-        <!-- Proceed Button -->
-        <Button
-            android:id="@+id/proceedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Proceed to Cat Page"
-            android:textSize="16sp"
-            android:layout_marginTop="16dp" />
-
-        <!-- Reset Button -->
+        <!-- Reset Cart -->
         <Button
             android:id="@+id/resetButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reset Cart"
             android:textSize="16sp"
-            android:layout_marginTop="16dp" />
+            android:textColor="#ffffff"
+            android:background="#602b00"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Proceed -->
+        <Button
+            android:id="@+id/proceedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to Checkout"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:background="#cca449"
+            android:layout_marginBottom="24dp" />
 
     </LinearLayout>
 </ScrollView>
