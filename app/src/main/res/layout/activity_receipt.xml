@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#fdead1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="32dp">
+
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:src="@drawable/fulllogo"
+            android:contentDescription="Tara, Kefi Logo"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Receipt"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#602b00"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Orders -->
+        <LinearLayout
+            android:id="@+id/orderContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff8f0"
+            android:padding="12dp"
+            android:elevation="2dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Total -->
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: ₱0.00"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#602b00"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Cat Info -->
+        <ImageView
+            android:id="@+id/catImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat Name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#602b00" />
+
+        <TextView
+            android:id="@+id/catPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Position"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/catShift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shift"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/catBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bio"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+</ScrollView>

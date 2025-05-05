@@ -12,15 +12,6 @@
         android:orientation="vertical"
         android:gravity="center_horizontal">
 
-        <!-- Logo -->
-        <ImageView
-            android:id="@+id/logoImage"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:src="@drawable/fulllogo"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"/>
-
         <!-- Kefi Cat -->
         <LinearLayout
             android:id="@+id/cat1Layout"
@@ -131,7 +122,7 @@
                 android:id="@+id/cat2Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bio: Anak ni Alaiza."
+                android:text="Bio: Can balance a cup on his tail."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -192,7 +183,7 @@
                 android:id="@+id/cat3Bio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bio: Anak ni Yasmien."
+                android:text="Bio: New and eager to impress customers."
                 android:textSize="16sp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp" />
@@ -203,17 +194,5 @@
                 android:layout_height="wrap_content"
                 android:text="Choose Cat" />
         </LinearLayout>
-
-        <!-- Checkout Button -->
-        <Button
-            android:id="@+id/checkoutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Checkout"
-            android:textSize="16sp"
-            android:textColor="#FFFFFF"
-            android:background="#602B00"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="80dp" />
     </LinearLayout>
 </ScrollView>
