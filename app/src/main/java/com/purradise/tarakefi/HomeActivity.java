@@ -25,7 +25,6 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-
         Button addEspresso = findViewById(R.id.addEspressoButton);
         addEspresso.setOnClickListener(v -> {
 
@@ -142,8 +141,6 @@ public class HomeActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Cake added to cart!", Toast.LENGTH_SHORT).show();
         });
-
-
     }
 
     private void addProductToCart(Product product) {
@@ -160,4 +157,3 @@ public class HomeActivity extends AppCompatActivity {
         editor.apply();
     }
 }
-
