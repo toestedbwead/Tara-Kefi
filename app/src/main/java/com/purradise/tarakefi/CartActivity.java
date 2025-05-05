@@ -34,32 +34,50 @@ public class CartActivity extends AppCompatActivity {
         String cartData = sharedPreferences.getString("cart", "");
         String[] cartItems = cartData.split(",");
 
-        cartContainer.removeAllViews(); // Remove all previous views
-        totalAmount = 0.00; // Reset total before recalculating
+        cartContainer.removeAllViews();
+        totalAmount = 0.00;
 
-        for (String itemName : cartItems) {
-            if (!itemName.isEmpty()) {
-                addCartItem(itemName);
+        // Count how many times each item appears
+        java.util.Map<String, Integer> itemCounts = new java.util.HashMap<>();
+
+        for (String item : cartItems) {
+            if (!item.isEmpty()) {
+                itemCounts.put(item, itemCounts.getOrDefault(item, 0) + 1);
             }
         }
-        updateTotalPrice();  // Update the total price at the end
+
+        // Display each item with quantity
+        for (java.util.Map.Entry<String, Integer> entry : itemCounts.entrySet()) {
+            addCartItem(entry.getKey(), entry.getValue());
+        }
+
+        updateTotalPrice();
     }
 
-    private void addCartItem(String itemName) {
+    private void addCartItem(String itemName, int quantity) {
         TextView itemTextView = new TextView(this);
-        itemTextView.setText("• " + itemName);
+        itemTextView.setText("• " + itemName + " x" + quantity);
         itemTextView.setTextSize(18);
         itemTextView.setPadding(0, 12, 0, 12);
         cartContainer.addView(itemTextView);
 
-        // Update total (assuming each item costs 80.00 for now, you can change this logic)
-        totalAmount += 80.00;  // Assuming each product has a price of 80.00 (you can adjust based on your product data)
+        // Simple fixed price per item
+        totalAmount += 80.00 * quantity;
     }
 
+
     private void updateTotalPrice() {
-        // Update the total price displayed
-        totalPriceTextView.setText("Total: ₱" + String.format("%.2f", totalAmount));
+        double vat = totalAmount * 0.12;
+        double grandTotal = totalAmount + vat;
+
+        // Show breakdown
+        totalPriceTextView.setText(
+                "Subtotal: ₱" + String.format("%.2f", totalAmount) + "\n" +
+                        "VAT (12%): ₱" + String.format("%.2f", vat) + "\n" +
+                        "Total: ₱" + String.format("%.2f", grandTotal)
+        );
     }
+
 
     private void resetCart() {
         // Clear cart data and reset total
