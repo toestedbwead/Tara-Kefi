@@ -61,9 +61,30 @@ public class CartActivity extends AppCompatActivity {
         itemTextView.setPadding(0, 12, 0, 12);
         cartContainer.addView(itemTextView);
 
-        // Simple fixed price per item
-        totalAmount += 80.00 * quantity;
+        // Lookup actual price based on item name
+        double pricePerItem = getPriceForItem(itemName);
+        totalAmount += pricePerItem * quantity;
     }
+
+    private double getPriceForItem(String itemName) {
+        switch (itemName) {
+            case "Espresso": return 80.00;
+            case "Americano": return 80.00;
+            case "Mocha": return 100.00;
+            case "Macchiato": return 90.00;
+            case "Latte": return 90.00;
+            case "Cappuccino": return 95.00;
+            case "Tea": return 75.00;
+            case "Hot Chocolate": return 85.00;
+            case "Sandwich": return 120.00;
+            case "Muffins": return 50.00;
+            case "Croissant": return 65.00;
+            case "Cookies": return 45.00;
+            case "Cake": return 150.00;
+            default: return 0.00;
+        }
+    }
+
 
 
     private void updateTotalPrice() {
