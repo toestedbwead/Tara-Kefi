@@ -1,7 +1,9 @@
 package com.purradise.tarakefi;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +21,12 @@ public class CartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
+
+        Button viewCartButton = findViewById(R.id.proceedButton);
+        viewCartButton.setOnClickListener(v -> {
+            Intent intent = new Intent(CartActivity.this, CartActivity.class);
+            startActivity(intent);
+        });
 
         cartContainer = findViewById(R.id.cartContainer);
         totalPriceTextView = findViewById(R.id.totalPrice);  // TextView to show total price
@@ -109,7 +117,9 @@ public class CartActivity extends AppCompatActivity {
     }
 
     private void proceedToCheckout() {
-        // Implement checkout process here
         Toast.makeText(this, "Proceeding to checkout...", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this, CatSelectionActivity.class);
+        startActivity(intent);
     }
+
 }

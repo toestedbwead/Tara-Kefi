@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fdead1"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/catContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/fulllogo"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- Kefi Cat -->
+        <LinearLayout
+            android:id="@+id/cat1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat1Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kefi_pic" />
+
+            <TextView
+                android:id="@+id/cat1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Kefi"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat1Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Shop Owner"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat1Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: 6am - 2pm"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat1Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Loves latte art and naps in the sun."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat1Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat" />
+        </LinearLayout>
+
+        <!-- Cat 2 -->
+        <LinearLayout
+            android:id="@+id/cat2Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat2Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loki_ni_alaiza_pic" />
+
+            <TextView
+                android:id="@+id/cat2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Loki"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat2Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Senior Barista"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat2Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: 2pm - 10pm"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat2Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Anak ni Alaiza."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat2Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat" />
+        </LinearLayout>
+
+        <!-- Cat 3 -->
+        <LinearLayout
+            android:id="@+id/cat3Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="#efe9e3">
+
+            <ImageView
+                android:id="@+id/cat3Image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loki_ni_yasmien_pic" />
+
+            <TextView
+                android:id="@+id/cat3Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: Loki"
+                android:textSize="18sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat3Job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position: Trainee"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat3Shift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shift: 10am - 6pm"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/cat3Bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bio: Anak ni Yasmien."
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/cat3Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Cat" />
+        </LinearLayout>
+
+        <!-- Checkout Button -->
+        <Button
+            android:id="@+id/checkoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkout"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:background="#602B00"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="80dp" />
+    </LinearLayout>
+</ScrollView>
