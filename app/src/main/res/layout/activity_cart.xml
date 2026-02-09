@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal"
-        android:paddingBottom="32dp">
+        android:paddingBottom="32dp"
+        >
 
         <!-- Logo -->
         <ImageView
@@ -69,8 +70,8 @@
             android:text="Reset Cart"
             android:textSize="16sp"
             android:textColor="#ffffff"
-            android:background="#602b00"
-            android:layout_marginBottom="12dp" />
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#602b00"/>
 
         <!-- Proceed -->
         <Button
@@ -80,7 +81,7 @@
             android:text="Proceed"
             android:textSize="16sp"
             android:textColor="#ffffff"
-            android:background="#cca449"
+            android:backgroundTint="#cca449"
             android:layout_marginBottom="24dp" />
 
     </LinearLayout>

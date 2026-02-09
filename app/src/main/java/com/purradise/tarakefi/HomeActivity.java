@@ -28,7 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         Button addEspresso = findViewById(R.id.addEspressoButton);
         addEspresso.setOnClickListener(v -> {
 
-            Product espresso = new Product("Espresso", 80.00, 1);
+            Product espresso = new Product("Espresso", 90.00, 1);
             addProductToCart(espresso);
 
             Toast.makeText(this, "Espresso added to cart!", Toast.LENGTH_SHORT).show();
@@ -147,10 +147,9 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         String cartData = sharedPreferences.getString("cart", "");
 
-        // Store in simple format: "Espresso,Americano,Mocha"
+
         cartData += product.getName() + ",";
 
-        // Log cart data to check what's being stored
         Log.d("HomeActivity", "Cart Data: " + cartData);
 
         editor.putString("cart", cartData);

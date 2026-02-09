@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "795303309432",
+    "project_id": "tara-kefi",
+    "storage_bucket": "tara-kefi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:795303309432:android:49fda83f9220e05a747d8d",
+        "android_client_info": {
+          "package_name": "com.purradise.tarakefi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYvnTHg55D5_-5xyjri22EH-i2--IbJag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

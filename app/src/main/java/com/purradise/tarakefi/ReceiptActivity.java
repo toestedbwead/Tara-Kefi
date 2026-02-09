@@ -19,8 +19,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
@@ -168,14 +166,12 @@ public class ReceiptActivity extends AppCompatActivity {
 
         pdfDoc.finishPage(page);
 
-        // Prepare the content values
         ContentValues values = new ContentValues();
         String filename = "TaraKefi_Receipt_" + System.currentTimeMillis() + ".pdf";
         values.put(MediaStore.MediaColumns.DISPLAY_NAME, filename);
         values.put(MediaStore.MediaColumns.MIME_TYPE, "application/pdf");
         values.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_DOWNLOADS); // Save to Downloads folder
 
-        // Use ContentResolver to insert the new file
         ContentResolver resolver = getContentResolver();
         Uri fileUri = resolver.insert(MediaStore.Files.getContentUri(MediaStore.VOLUME_EXTERNAL), values);
 
@@ -188,7 +184,6 @@ public class ReceiptActivity extends AppCompatActivity {
                     out.close();
                 }
 
-                // After writing, update the file to mark it as not pending
                 values.clear();
                 values.put(MediaStore.MediaColumns.IS_PENDING, 0);
                 resolver.update(fileUri, values, null, null);

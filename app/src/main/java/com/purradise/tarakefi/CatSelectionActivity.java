@@ -121,7 +121,6 @@ public class CatSelectionActivity extends AppCompatActivity {
         });
     }
 
-    // Method to save selected cat's details to SharedPreferences
     private void saveCatDetailsToSharedPreferences(String name, String position, String shift, String bio, int imageRes) {
         SharedPreferences sharedPreferences = getSharedPreferences("OrderData", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -135,7 +134,6 @@ public class CatSelectionActivity extends AppCompatActivity {
         editor.apply();
     }
 
-    // Method to navigate to the Receipt Activity
     private void navigateToReceiptActivity() {
         Intent intent = new Intent(CatSelectionActivity.this, ReceiptActivity.class);
         startActivity(intent);

@@ -15,7 +15,7 @@ public class CartActivity extends AppCompatActivity {
     private LinearLayout cartContainer;
     private TextView totalPriceTextView;
     private SharedPreferences sharedPreferences;
-    private double totalAmount = 0.00; // To hold the total price
+    private double totalAmount = 0.00;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class CartActivity extends AppCompatActivity {
         });
 
         cartContainer = findViewById(R.id.cartContainer);
-        totalPriceTextView = findViewById(R.id.totalPrice);  // TextView to show total price
+        totalPriceTextView = findViewById(R.id.totalPrice);
         sharedPreferences = getSharedPreferences("MyCart", MODE_PRIVATE);
 
         findViewById(R.id.resetButton).setOnClickListener(v -> resetCart());
@@ -45,7 +45,6 @@ public class CartActivity extends AppCompatActivity {
         cartContainer.removeAllViews();
         totalAmount = 0.00;
 
-        // Count how many times each item appears
         java.util.Map<String, Integer> itemCounts = new java.util.HashMap<>();
 
         for (String item : cartItems) {
@@ -54,7 +53,6 @@ public class CartActivity extends AppCompatActivity {
             }
         }
 
-        // Display each item with quantity
         for (java.util.Map.Entry<String, Integer> entry : itemCounts.entrySet()) {
             addCartItem(entry.getKey(), entry.getValue());
         }
@@ -69,7 +67,6 @@ public class CartActivity extends AppCompatActivity {
         itemTextView.setPadding(0, 12, 0, 12);
         cartContainer.addView(itemTextView);
 
-        // Lookup actual price based on item name
         double pricePerItem = getPriceForItem(itemName);
         totalAmount += pricePerItem * quantity;
     }
@@ -109,11 +106,10 @@ public class CartActivity extends AppCompatActivity {
 
 
     private void resetCart() {
-        // Clear cart data and reset total
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("cart", "");
         editor.apply();
-        loadCart();  // Refresh the cart
+        loadCart();
     }
 
     private void proceedToCheckout() {
